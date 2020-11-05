@@ -1,0 +1,162 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "linkedService",
+    "planserviceCostShares",
+    "_org",
+    "objectId",
+    "objectType"
+  ],
+  "properties": {
+    "linkedService": {
+      "$id": "#/properties/linkedService",
+      "type": "object",
+      "title": "The Linkedservice Schema",
+      "required": [
+        "_org",
+        "objectId",
+        "objectType",
+        "name"
+      ],
+      "properties": {
+        "_org": {
+          "$id": "#/properties/linkedService/properties/_org",
+          "type": "string",
+          "title": "The _org Schema",
+          "default": "",
+          "examples": [
+            "example.com"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "objectId": {
+          "$id": "#/properties/linkedService/properties/objectId",
+          "type": "string",
+          "title": "The Objectid Schema",
+          "default": "",
+          "examples": [
+            "1234520xvc30asdf-502"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "objectType": {
+          "$id": "#/properties/linkedService/properties/objectType",
+          "type": "string",
+          "title": "The Objecttype Schema",
+          "default": "",
+          "examples": [
+            "service"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "name": {
+          "$id": "#/properties/linkedService/properties/name",
+          "type": "string",
+          "title": "The Name Schema",
+          "default": "",
+          "examples": [
+            "Yearly physical"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "planserviceCostShares": {
+      "$id": "#/properties/planserviceCostShares",
+      "type": "object",
+      "title": "The Planservicecostshares Schema",
+      "required": [
+        "deductible",
+        "_org",
+        "copay",
+        "objectId",
+        "objectType"
+      ],
+      "properties": {
+        "deductible": {
+          "$id": "#/properties/planserviceCostShares/properties/deductible",
+          "type": "integer",
+          "title": "The Deductible Schema",
+          "default": 0,
+          "examples": [
+            10
+          ]
+        },
+        "_org": {
+          "$id": "#/properties/planserviceCostShares/properties/_org",
+          "type": "string",
+          "title": "The _org Schema",
+          "default": "",
+          "examples": [
+            "example.com"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "copay": {
+          "$id": "#/properties/planserviceCostShares/properties/copay",
+          "type": "integer",
+          "title": "The Copay Schema",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        },
+        "objectId": {
+          "$id": "#/properties/planserviceCostShares/properties/objectId",
+          "type": "string",
+          "title": "The Objectid Schema",
+          "default": "",
+          "examples": [
+            "1234512xvc1314asdfs-503"
+          ],
+          "pattern": "^(.*)$"
+        },
+        "objectType": {
+          "$id": "#/properties/planserviceCostShares/properties/objectType",
+          "type": "string",
+          "title": "The Objecttype Schema",
+          "default": "",
+          "examples": [
+            "membercostshare"
+          ],
+          "pattern": "^(.*)$"
+        }
+      }
+    },
+    "_org": {
+      "$id": "#/properties/_org",
+      "type": "string",
+      "title": "The _org Schema",
+      "default": "",
+      "examples": [
+        "example.com"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "objectId": {
+      "$id": "#/properties/objectId",
+      "type": "string",
+      "title": "The Objectid Schema",
+      "default": "",
+      "examples": [
+        "27283xvx9asdff-504"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "objectType": {
+      "$id": "#/properties/objectType",
+      "type": "string",
+      "title": "The Objecttype Schema",
+      "default": "",
+      "examples": [
+        "planservice"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}
+
